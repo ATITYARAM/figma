@@ -10,21 +10,30 @@ Separate repository for practical deliverables for Experiments 08–12 of the UI
 
 ## Experiments
 
-| Experiment | Topic | Folder | Status |
+| Experiment | Topic | Folder | GitHub companion |
 |---|---|---|---|
-| 08 | Micro-interactions | [experiment-08-micro-interactions](./experiment-08-micro-interactions/) | In progress |
-| 09 | Wireframes | experiment-09-wireframes | Planned |
-| 10 | Mockups using Figma plugins | experiment-10-mockups | Planned |
-| 11 | Prototypes using UI components | experiment-11-prototypes | Planned |
-| 12 | UI/UX portfolio | experiment-12-portfolio | Planned |
+| 08 | Micro-interactions | [experiment-08-micro-interactions](./experiment-08-micro-interactions/) | HTML demo committed |
+| 09 | Wireframes | [experiment-09-wireframes](./experiment-09-wireframes/) | HTML demo committed |
+| 10 | Mockups | [experiment-10-mockups](./experiment-10-mockups/) | HTML mockup committed |
+| 11 | Prototypes | [experiment-11-prototypes](./experiment-11-prototypes/) | HTML prototype committed |
+| 12 | Portfolio | [experiment-12-portfolio](./experiment-12-portfolio/) | HTML portfolio committed |
 
-## Working method
+**Note:** GitHub companion demos are not a substitute for the corresponding editable Figma frames and prototype connections. Complete and verify those in the Figma file separately.
 
-Each experiment is added in its own folder and committed separately. Figma remains the source of truth for editable design work; this repository stores supporting source files, runnable demonstrations, exported assets and a link back to the Figma work.
+## Run locally
 
-## Run an experiment
+This repository uses Vite as a lightweight launcher for the five standalone HTML demos.
 
-Open the experiment folder's `index.html` in a browser. No build tools or package installation are required for the standalone demos.
+```bash
+npm install
+npm run dev
+```
+
+Open the local URL printed by Vite. The root page links to each experiment. Each experiment remains in its own folder.
+
+## Figma workflow
+
+The root `index.html` and `package.json` provide a runnable entry point for the Figma code workflow. Keep the five experiments separate; do not merge their source folders or replace the existing Figma design file.
 
 ## Academic integrity
 
